@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +17,5 @@ use App\Http\Controller\HomeController;
 // });
 
 Route::get('/', 'HomeController@index');
+Route::get('/signin', 'AuthController@showSignin');
+Route::get('/signup', 'AuthController@showSignup');

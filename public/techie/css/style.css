@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .getstarted {
   padding: 8px 25px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   border-radius: 5px;
   color: #fff;
   transition: 0.3s;
@@ -1622,4 +1622,69 @@ section {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   text-decoration: none;
+}
+
+
+/****                              own                            ****/
+.noBoxShadow {
+  box-shadow: none !important;
+}
+
+.fontGray {
+  color: #848484;
+}
+
+.codeHeader {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.75rem 0.75rem 0 0;
+  background-color: #3A3D40;
+  color: #DBE0E5;
+  padding: 10px 15px;
+}
+
+.codeBody {
+  background: #272822;
+}
+
+.codeBody pre {
+  padding: 20px;
+  color: #ecf0f1 !important;
+}
+
+.codeBody pre .keyword {
+  color: #66d9ef;
+}
+
+.codeBody pre .function {
+  color: #e6db74;
+}
+
+.codeBody pre .string {
+  color: #a6e22e;
+}
+
+.codeNav button {
+  margin-right: 5px;
+  border: none;
+  padding: 0 10px 0 10px;
+  background: transparent;
+  color: #DBE0E5;
+  border-radius: .65rem;
+  line-height: 1.6;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.codeNav .active-lang {
+  background-color: #fff;
+  color: #000;
+}
+
+.codeBody .d-hidden {
+  display: none;
+}
+
+.codeBody .d-block {
+  display: block;
 }

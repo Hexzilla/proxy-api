@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Proxy Api</title>
+  <title>Search Api</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -23,7 +23,7 @@
   <link href="techie/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="techie/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="techie/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <!-- Template Main CSS File -->
   <link href="techie/css/style.css" rel="stylesheet">
 
@@ -34,14 +34,6 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-  <style>
-    .noBoxShadow {
-      box-shadow: none !important;
-    }
-    .fontGray {
-      color: #848484;
-    }
-  </style>
 </head>
 
 <body>
@@ -49,7 +41,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.html">Proxy Api</a></h1>
+      <h1 class="logo"><a href="javascript:void()">Search Api</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="techie/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -59,12 +51,11 @@
           <li><a class="nav-link scrollto" href="#integrations">Integrations</a></li>
           <li><a class="nav-link scrollto" href="#features">Features</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto" href="#usecase">Use Cases</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li class="dropdown"><a href="#"><span>Document</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Google Search Api</a></li>
-              <li><a href="#">Api Status</a></li>
-              <li><a href="#">Libraries</a></li>
+              <li><a href="https://docs.dataforseo.com/v3/serp/google/overview/?php" target="_blank" >Google Search Api</a></li>
               <li><a href="#">Playground</a></li>
               <!-- <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -81,7 +72,8 @@
               <li><a href="#">Drop Down 4</a></li> -->
             </ul>
           </li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="getstarted" href="{{url('signin')}}">Sign In</a></li>
+          <li><a class="getstarted" href="{{url('signup')}}">Register</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -108,58 +100,180 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <!-- <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-            <img src="techie/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>Voluptatem dignissimos provident quasi corporis</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a>
-          </div> -->
+    <!-- ======= Services Section ======= -->
+    <section id="integrations" class="services section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Easy Integration</h2>
         </div>
 
-        <div class="row" style="max-width: 800px; margin: 0 auto">
-          <div class="col-lg-4 col-md-4 form-group text-center">
-            <span class="fontGray">Search Query</span>
-            <input class="form-control noBoxShadow"></input>
+        <div class="codeWrapper">
+          <div class="codeHeader">
+            <div class="codeType">
+              <i class="fa fa-code"></i>&nbsp;&nbsp;
+              Get
+            </div>
           </div>
-          <div class="col-lg-4 col-md-4 text-center">
-            <span class="fontGray">Location</span>
-            <select class="form-select noBoxShadow" >
-              <option selected disabled>Select Location</option>
-              <option value="1">United State</option>
-              <option value="2">United Kingdom</option>
-              <option value="3">India</option>
-            </select>
-          </div>
-          <div class="col-lg-4 col-md-4 text-center" style="display:flex; align-items: flex-end; justify-content: center">
-            <button class="btn btn-primary noBoxShadow">Test Search</button>
+          <div class="codeBody">
+            <pre><code class="" id="">https://serpapi.com/search.<span class="token keyword">json</span>?q=<span class="token function">Coffee</span>&amp;location=<span class="token function">Austin%2C+Texas%2C+United+States</span>&amp;hl=<span class="token function">en</span>&amp;gl=<span class="token function">us</span>&amp;google_domain=<span class="token function">google.com</span>&amp;api_key=<span class="token function">a216f4b385baeaec2dbb731b987be2e2f525411ff28ef338e1ecc10099dbfbd4</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
           </div>
         </div>
-        <br><br>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 text-center">
-            ...
+        <br>
+        <p class="text-center">Or by using one of our libraries in your preferred language:</p>
+        <div class="codeWrapper">
+          <div class="codeHeader">
+            <div class="codeType">
+              <i class="fa fa-code"></i>&nbsp;&nbsp;
+              Code to integrate
+            </div>
+            <div class="codeNav">
+              <span>|</span>
+              <button type="button" value="curl" class="">cURL</button>
+              <button type="button" value="ruby" class="active-lang">Ruby</button>
+              <button type="button" value="python" class="">Python</button>
+              <button type="button" value="node" class="">Node.js</button>
+              <button type="button" value="php" class="">PHP</button>
+              <button type="button" value="dotnet" class="">.NET</button>
+              <button type="button" value="java" class="">Java</button>
+              <button type="button" value="go" class="">Go</button>
+              <button type="button" value="sheet" class="">Google Sheets</button>
+            </div>
           </div>
-          <div class="col-lg-6 col-md-6 text-center">
-            ...
+          <div class="codeBody multiPre">
+
+  <pre class="d-hidden curl"><code class="  language-bash" id="language-bash"><span class="token function">curl</span> --get https://serpapi.com/search <span class="token punctuation">\</span>
+  -d <span class="token assign-left variable">q</span><span class="token operator">=</span><span class="token string">"Coffee"</span> <span class="token punctuation">\</span>
+  -d <span class="token assign-left variable">location</span><span class="token operator">=</span><span class="token string">"Austin%2C+Texas%2C+United+States"</span> <span class="token punctuation">\</span>
+  -d <span class="token assign-left variable">hl</span><span class="token operator">=</span><span class="token string">"en"</span> <span class="token punctuation">\</span>
+  -d <span class="token assign-left variable">gl</span><span class="token operator">=</span><span class="token string">"us"</span> <span class="token punctuation">\</span>
+  -d <span class="token assign-left variable">google_domain</span><span class="token operator">=</span><span class="token string">"google.com"</span> <span class="token punctuation">\</span>
+  -d <span class="token assign-left variable">api_key</span><span class="token operator">=</span><span class="token string">"secret_api_key"</span>
+  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="d-hidden ruby"><code class=" language-ruby" id="language-ruby"><span class="token keyword">require</span> <span class="token string">'google_search_results'</span> 
+  params <span class="token operator">=</span> <span class="token punctuation">{</span>
+  q<span class="token punctuation">:</span> <span class="token string">"Coffee"</span><span class="token punctuation">,</span>
+  location<span class="token punctuation">:</span> <span class="token string">"Austin, Texas, United States"</span><span class="token punctuation">,</span>
+  hl<span class="token punctuation">:</span> <span class="token string">"en"</span><span class="token punctuation">,</span>
+  gl<span class="token punctuation">:</span> <span class="token string">"us"</span><span class="token punctuation">,</span>
+  google_domain<span class="token punctuation">:</span> <span class="token string">"google.com"</span><span class="token punctuation">,</span>
+  api_key<span class="token punctuation">:</span> <span class="token string">"secret_api_key"</span>
+  <span class="token punctuation">}</span>
+  search <span class="token operator">=</span> <span class="token constant">GoogleSearch</span><span class="token punctuation">.</span><span class="token keyword">new</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span>
+  hash_results <span class="token operator">=</span> client<span class="token punctuation">.</span>get_hash
+  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="d-hidden python"><code class="  language-python" id="language-python"><span class="token keyword">from</span> serpapi <span class="token keyword">import</span> GoogleSearch
+  params <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string">"q"</span><span class="token punctuation">:</span> <span class="token string">"Coffee"</span><span class="token punctuation">,</span>
+  <span class="token string">"location"</span><span class="token punctuation">:</span> <span class="token string">"Austin, Texas, United States"</span><span class="token punctuation">,</span>
+  <span class="token string">"hl"</span><span class="token punctuation">:</span> <span class="token string">"en"</span><span class="token punctuation">,</span>
+  <span class="token string">"gl"</span><span class="token punctuation">:</span> <span class="token string">"us"</span><span class="token punctuation">,</span>
+  <span class="token string">"google_domain"</span><span class="token punctuation">:</span> <span class="token string">"google.com"</span><span class="token punctuation">,</span>
+  <span class="token string">"api_key"</span><span class="token punctuation">:</span> <span class="token string">"secret_api_key"</span>
+  <span class="token punctuation">}</span>
+  search <span class="token operator">=</span> GoogleSearch<span class="token punctuation">(</span>params<span class="token punctuation">)</span>
+  results <span class="token operator">=</span> search<span class="token punctuation">.</span>get_dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="d-hidden node"><code class=" language-javascript" id="language-javascript"><span class="token keyword">const</span> <span class="token maybe-class-name">SerpApi</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'google-search-results-nodejs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> search <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SerpApi<span class="token punctuation">.</span>GoogleSearch</span><span class="token punctuation">(</span><span class="token string">"secret_api_key"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+    q<span class="token operator">:</span> <span class="token string">"Coffee"</span><span class="token punctuation">,</span>
+    <span class="token dom variable">location</span><span class="token operator">:</span> <span class="token string">"Austin, Texas, United States"</span><span class="token punctuation">,</span>
+    hl<span class="token operator">:</span> <span class="token string">"en"</span><span class="token punctuation">,</span>
+    gl<span class="token operator">:</span> <span class="token string">"us"</span><span class="token punctuation">,</span>
+    google_domain<span class="token operator">:</span> <span class="token string">"google.com"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">callback</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token comment">// Show result as JSON</span>
+  search<span class="token punctuation">.</span><span class="token method function property-access">json</span><span class="token punctuation">(</span>params<span class="token punctuation">,</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="d-hidden php"><code class=" language-php" id="language-php"><span class="token keyword">require</span> <span class="token single-quoted-string string">'path/to/google_search_results'</span><span class="token punctuation">;</span>
+  <span class="token variable">$query</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token double-quoted-string string">"q"</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token double-quoted-string string">"Coffee"</span><span class="token punctuation">,</span>
+  <span class="token double-quoted-string string">"location"</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token double-quoted-string string">"Austin, Texas, United States"</span><span class="token punctuation">,</span>
+  <span class="token double-quoted-string string">"hl"</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token double-quoted-string string">"en"</span><span class="token punctuation">,</span>
+  <span class="token double-quoted-string string">"gl"</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token double-quoted-string string">"us"</span><span class="token punctuation">,</span>
+  <span class="token double-quoted-string string">"google_domain"</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token double-quoted-string string">"google.com"</span><span class="token punctuation">,</span>
+  <span class="token double-quoted-string string">"api_key"</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token double-quoted-string string">"secret_api_key"</span>
+  <span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token variable">$search</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GoogleSearch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token variable">$results</span> <span class="token operator">=</span> <span class="token variable">$search</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token variable">$query</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="d-hidden dotnet"><code class=" language-dotnet" id="language-dotnet"><span class="token class-name">String</span> apiKey <span class="token operator">=</span> <span class="token string">"secret_api_key"</span><span class="token punctuation">;</span>
+  <span class="token class-name">Hashtable</span> ht <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Hashtable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ht<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token string">"q"</span><span class="token punctuation">,</span> <span class="token string">"Coffee"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ht<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token string">"location"</span><span class="token punctuation">,</span> <span class="token string">"Austin, Texas, United States"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ht<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token string">"hl"</span><span class="token punctuation">,</span> <span class="token string">"en"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ht<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token string">"gl"</span><span class="token punctuation">,</span> <span class="token string">"us"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ht<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token string">"google_domain"</span><span class="token punctuation">,</span> <span class="token string">"google.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">try</span>
+  <span class="token punctuation">{</span>
+    <span class="token class-name">GoogleSearch</span> search <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">GoogleSearch</span><span class="token punctuation">(</span>ht<span class="token punctuation">,</span> apiKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">JObject</span> data <span class="token operator">=</span> search<span class="token punctuation">.</span><span class="token function">GetJson</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">JArray</span> results <span class="token operator">=</span> <span class="token punctuation">(</span>JArray<span class="token punctuation">)</span>data<span class="token punctuation">[</span><span class="token string">"organic_results"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token class-name">JObject</span> result <span class="token keyword">in</span> results<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+      Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">"Found: "</span> <span class="token operator">+</span> result<span class="token punctuation">[</span><span class="token string">"title"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">SerpApiClientException</span> ex<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">"Exception:"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>ex<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="d-hidden java"><code class=" language-java" id="language-java"><span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> parameter <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  parameter<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"q"</span><span class="token punctuation">,</span> <span class="token string">"Coffee"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  parameter<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"location"</span><span class="token punctuation">,</span> <span class="token string">"Austin, Texas, United States"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  parameter<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"hl"</span><span class="token punctuation">,</span> <span class="token string">"en"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  parameter<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"gl"</span><span class="token punctuation">,</span> <span class="token string">"us"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  parameter<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"google_domain"</span><span class="token punctuation">,</span> <span class="token string">"google.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  parameter<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"api_key"</span><span class="token punctuation">,</span> <span class="token string">"secret_api_key"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">GoogleSearch</span> search <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GoogleSearch</span><span class="token punctuation">(</span>parameter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">try</span>
+  <span class="token punctuation">{</span>
+    <span class="token class-name">JsonObject</span> results <span class="token operator">=</span> search<span class="token punctuation">.</span><span class="token function">getJson</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">SerpApiClientException</span> ex<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token class-name">Console</span><span class="token punctuation">.</span><span class="token class-name">WriteLine</span><span class="token punctuation">(</span><span class="token string">"Exception:"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">Console</span><span class="token punctuation">.</span><span class="token class-name">WriteLine</span><span class="token punctuation">(</span>ex<span class="token punctuation">.</span><span class="token class-name">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="d-hidden go"><code class=" language-go" id="language-go"><span class="token keyword">package</span> main
+  <span class="token keyword">import</span> <span class="token punctuation">(</span>
+    g <span class="token string">"github.com/serpapi/google-search-results-golang"</span>
+  <span class="token punctuation">)</span>
+  <span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    parameter <span class="token operator">:=</span> <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span>
+      <span class="token string">"q"</span><span class="token punctuation">:</span> <span class="token string">"Coffee"</span><span class="token punctuation">,</span>
+      <span class="token string">"location"</span><span class="token punctuation">:</span> <span class="token string">"Austin, Texas, United States"</span><span class="token punctuation">,</span>
+      <span class="token string">"hl"</span><span class="token punctuation">:</span> <span class="token string">"en"</span><span class="token punctuation">,</span>
+      <span class="token string">"gl"</span><span class="token punctuation">:</span> <span class="token string">"us"</span><span class="token punctuation">,</span>
+      <span class="token string">"google_domain"</span><span class="token punctuation">:</span> <span class="token string">"google.com"</span><span class="token punctuation">,</span>
+      <span class="token string">"api_key"</span><span class="token punctuation">:</span> <span class="token string">"secret_api_key"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    search <span class="token operator">:=</span> g<span class="token punctuation">.</span><span class="token function">NewGoogleSearch</span><span class="token punctuation">(</span>parameter<span class="token punctuation">,</span> <span class="token string">"secret_api_key"</span><span class="token punctuation">)</span>
+    results<span class="token punctuation">,</span> err <span class="token operator">:=</span> search<span class="token punctuation">.</span><span class="token function">GetJSON</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="d-hidden sheet"><code class=" language-markup">Install SerpApi Google Sheets <a class="token md-link" href="https://gsuite.google.com/marketplace/app/serpapi_search_engine_results_and_ranks/562749385480" target="_blank">add-on</a>
+Use the formula below
+
+  =SERPAPI_RESULT("q=Coffee&location=Austin, Texas, United States&hl=en&gl=us&google_domain=google.com", "organic_results.0.title")
+  </code></pre>
+
           </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Services Section -->
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
@@ -191,14 +305,6 @@
 
       </div>
     </section><!-- End Counts Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="integrations" class="services section-bg">
-      <div class="container">
-        <p class="text-center">Easy Integration</p>
-        ...        
-      </div>
-    </section><!-- End Services Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
@@ -250,7 +356,6 @@
 
         <div class="section-title">
           <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
@@ -391,13 +496,104 @@
       </div>
     </section><!-- End Frequently Asked Questions Section -->
 
+    <section id="usecase" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Use Cases</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bx bxl-dribbble"></i>
+              </div>
+              <h4><a href="">SEO</a></h4>
+              <p>SerpApi provides rankings and makes sense of organic search results and other search results for any domain, any keyword, any country, and any language for various search engines.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bx bx-file"></i>
+              </div>
+              <h4><a href="">Local SEO</a></h4>
+              <p>By bringing SERPs Local Pack and Maps results, SerpApi allows businesses to go Local in their research and seek reliable stats to base their local marketing decisions on.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bx bx-tachometer"></i>
+              </div>
+              <h4><a href="">Background Check Automation</a></h4>
+              <p>Use SerpApi to pull up information for personal or company Background Checks. All in real-time. Used by banks, law firms and law enforcement departments, among others.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                </svg>
+                <i class="bx bx-layer"></i>
+              </div>
+              <h4><a href="">AI Models</a></h4>
+              <p>Search results data is the best source to build large dataset for Machine Learning models. SerpApi provides multiple APIs to make these data extraction easy.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                </svg>
+                <i class="bx bx-slideshow"></i>
+              </div>
+              <h4><a href="">News Monitoring</a></h4>
+              <p>By utilizing News results from various search engines, SerpApi will supply you with a valuable set of data to analyze News trends, predict the future based on patterns, and monitor mentions.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-teal">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bx bx-arch"></i>
+              </div>
+              <h4><a href="">Voice Assistant</a></h4>
+              <p>Building a Voice Assistant from scratch is hard. SerpApi allows a blazing fast JSON access to direct answers and knowledge graph results.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
+    <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Questions, get a quote, special needs, or just say hi.
+          <p>Questions, get a quote, special needs, or just say hi.<br>
               We would love to hear from you!</p>
         </div>
 
@@ -523,6 +719,22 @@
 
   <!-- Template Main JS File -->
   <script src="techie/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      $(".ruby").show()
+
+      $(".codeNav button").click(function() {
+        $(".codeNav .active-lang").attr("class", '')
+
+        const value = $(this).val()
+        $(this).attr('class', 'active-lang')
+
+        $(".multiPre pre").hide()
+        $("."+ value).show()
+      })
+    })
+  </script>
 
 </body>
 
