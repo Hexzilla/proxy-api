@@ -26,13 +26,18 @@
 	<link rel="stylesheet" type="text/css" href="login/css/util.css">
 	<link rel="stylesheet" type="text/css" href="login/css/main.css">
 <!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="techie/vendor/aos/aos.css">
 </head>
 <body>
 
 	@yield('content')
 
 	<div id="dropDownSelect1"></div>
-	
+
+	<script src="techie/vendor/aos/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 <!--===============================================================================================-->
 	<script src="login/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -49,6 +54,5 @@
 	<script src="login/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="login/js/main.js"></script>
-
 </body>
 </html>
