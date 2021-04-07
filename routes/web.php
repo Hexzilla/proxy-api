@@ -19,3 +19,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index');
 Route::get('/signin', 'AuthController@showSignin');
 Route::get('/signup', 'AuthController@showSignup');
+
+Route::get('/vue', 'HomeController@vue');
